@@ -2,17 +2,17 @@ version: 0.0
 os: linux
 files:
   - source: /composer.json
-    destination: /usr/share/nginx/html/composer.json
+    destination: /usr/share/nginx/html
   - source: /composer.phar
-    destination: /usr/share/nginx/html/composer.phar
+    destination: /usr/share/nginx/html
   - source: /composer.lock
-    destination: /usr/share/nginx/html/composer.lock
+    destination: /usr/share/nginx/html
   - source: /oil
-    destination: /usr/share/nginx/html/oil
+    destination: /usr/share/nginx/html
   - source: /fuel
-    destination: /usr/share/nginx/html/fuel
+    destination: /usr/share/nginx/html
   - source: /public
-    destination: /usr/share/nginx/html/public
+    destination: /usr/share/nginx/html
 hooks:
   AfterInstall:
     - location: scripts/change_owner.sh
